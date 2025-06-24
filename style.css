@@ -1,0 +1,70 @@
+:root
+{
+    /* Define cores personalizadas nas variaveis abaixo */
+    --font-color: #f1f1f1;
+    --background-color: #f1f1f1;
+    --link-color: #f1f1f1;
+    --highlight-color: #f1f1f1;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Codigo mobile first */
+
+/* Nav Bar */
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* CODIGO ABAIXO FAZ GRADIENTE DO NAVBAR */
+    background: #2A7B9B;
+    background: linear-gradient(180deg,rgba(42, 123, 155, 1) 69%, rgba(42, 123, 155, 0.88) 80%, rgba(42, 123, 155, 0.5) 90%, rgba(87, 199, 133, 0) 100%);
+    
+}
+
+.navbar > h1 {
+    margin: 12px;
+    font-size: 28px;
+}
+
+.navbar > .iconslinks {
+    margin: 15px;
+    border: 1px dotted black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 30%;
+    font-size: 24px;
+}
+
+.navbar > .iconslinks > a > .icontext {
+    display: none;
+}
+
+
+/* End Nav Bar */
+
+
+
+
+
+
+
+
+
+
+/* Codigo restante das telas */
+@media screen and (min-width: 600px){
+    body{
+        background-color: black;
+    }
+}

@@ -4,7 +4,7 @@
     --font-color: #112D4E;
     --background-color: #F9F7F7;
     --link-color: #f1f1f1;
-    --highlight-color: #DBE2EF;
+    --highlight-color: #1d3652;
 }
 *
 {
@@ -17,57 +17,46 @@
 
 /* Codigo mobile first */
 
-/* Nav Bar */
 
-.navbar
-{
+/* Nav Menu */
+.navmenu {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+}
+
+/* firstrow */
+.navmenu > .firstrow {
+    display: flex;
+    flex-flow: row;
+    background-color: bisque;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* CODIGO ABAIXO FAZ GRADIENTE DO NAVBAR */
-    background: #112D4E;
-    background: linear-gradient(180deg,rgba(17, 45, 78, 1) 80%, rgba(17, 45, 78, 0.49) 94%, rgba(237, 221, 83, 0) 100%);
-    
 }
-
-.navbar > h1 {
-    flex-shrink: 0;
-}
-
-/* Nome na NavBar */
-.navbar > h1 > a {
-    margin: 12px;
+.navmenu > .firstrow > .name {
+    border: 1px dotted rgb(0, 0, 0);
+    margin: 15px;
     font-size: 28px;
-    color: var(--background-color);
 }
 
-.navbar > .iconslinks {
-    margin: 12px;
-    border: 1px dotted black;
+#hamburguer {
+    border: 1px dotted blue;
+    margin: 15px;
+    font-size: 32px;
+    align-content: center;
+}
+
+/* Menu colapsavel */
+#menuColapsavel {
+    background-color: aquamarine;
     display: flex;
-    justify-content: space-evenly;
-    flex-basis: 30%;
-    color: #f1f1f1;
-    flex-shrink: 0;
+    flex-flow: column;
+    align-items: stretch;
 }
+#menuColapsavel > .links {
+    padding: 5px;
+    border: 1px dotted black;
 
-.navbar > .iconslinks > a > i {
-    font-size: 24px;
-    color: var(--background-color);
 }
-
-.navbar > .iconslinks > a > .icontext {
-    display: none;
-}
-
-
-/* End Nav Bar */
-
-
+/* End Nav Menu */
 
 
 

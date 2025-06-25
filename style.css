@@ -27,14 +27,16 @@
 /* firstrow */
 .navmenu > .firstrow {
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     background-color: bisque;
     justify-content: space-between;
+    height: 12%;
 }
 .navmenu > .firstrow > .name {
     border: 1px dotted rgb(0, 0, 0);
     margin: 15px;
     font-size: 28px;
+    flex-shrink: 0;
 }
 
 #hamburguer {
@@ -42,12 +44,13 @@
     margin: 15px;
     font-size: 32px;
     align-content: center;
+    flex-shrink: 0;
 }
 
 /* Menu colapsavel */
 #menuColapsavel {
     background-color: aquamarine;
-    display: flex;
+    display: none;
     flex-flow: column;
     align-items: stretch;
 }
@@ -66,7 +69,7 @@
 
 
 /* Codigo restante das telas */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1081px){
     body{
         background-color: black;
     }

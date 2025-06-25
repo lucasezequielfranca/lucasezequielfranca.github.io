@@ -27,21 +27,33 @@
             <i class="fa-solid fa-bars" id="hamburguer" onclick="colapsarMenu()"></i>
         </div>
         <div id="menuColapsavel">
-            <a href="" class="links">Sobre mim</a>
+            <a href="#heroimg" class="links">Sobre mim</a>
             <a href="" class="links">Formação educacional</a>
             <a href="" class="links">Trabalhos</a>
             <a href="" class="links">Contato</a>
         </div>
     </nav>
     
-    <!--  -->
+    <!-- Hero -->
+    <section class="sectionhero" id="hero">
+        <h1>Bem vindo, eu sou Lucas 👋</h1>
+        <p>Desenvolvo apps e front-ends que impressionam e engajam. Bora conversar?</p>
+
+        <img src="/imgs/Retrato.webp" alt="" srcset="" id="heroimg">
+        <p></p>
+    </section>
+
     <script>
+        var menu = document.getElementById("menuColapsavel")
+        menu.style.translate = ('0 -100%')
         function colapsarMenu() {
-            var menu = document.getElementById("menuColapsavel")
-            if (menu.style.display === 'flex'){
-                menu.style.display = 'none'
-            }else {
-                menu.style.display = 'flex'
+            console.log(menu.style.translate)
+            if (menu.style.translate == '0px'){
+                menu.style.translate = '0 -100%'
+                hamburguer.className = 'fa-solid fa-bars'
+            } else if (menu.style.translate == '0px -100%'){
+                menu.style.translate = ('0')
+                hamburguer.className = 'fa-solid fa-x'
             }
         }
     </script>

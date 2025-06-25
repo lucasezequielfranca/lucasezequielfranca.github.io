@@ -13,6 +13,11 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: var(--font-color);
+}
+body {
+    background-color: var(--background-color);
 }
 
 /* Codigo mobile first */
@@ -28,19 +33,18 @@
 .navmenu > .firstrow {
     display: flex;
     flex-flow: row nowrap;
-    background-color: bisque;
     justify-content: space-between;
-    height: 12vh;
+    background-color: var(--background-color);
+    z-index: 1;
 }
 .navmenu > .firstrow > .name {
-    border: 1px dotted rgb(0, 0, 0);
     margin: 15px;
     font-size: 28px;
     flex-shrink: 0;
+    
 }
 
 #hamburguer {
-    border: 1px dotted blue;
     margin: 15px;
     font-size: 32px;
     align-content: center;
@@ -49,18 +53,52 @@
 
 /* Menu colapsavel */
 #menuColapsavel {
-    background-color: aquamarine;
-    display: none;
-    flex-flow: column;
+    background-color: var(--font-color);
+    display: flex;
+    flex-flow: row wrap;
     align-items: stretch;
+    transition: translate 0.2s;
+    translate: 0px;
+    z-index: 0;
+    
 }
 #menuColapsavel > .links {
+    color: var(--background-color);
     padding: 5px;
+    flex-basis: 50%;
     border: 1px dotted black;
+    
 
 }
 /* End Nav Menu */
+/* Hero */
+.sectionhero {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: stretch;
+}
 
+.sectionhero > h1 {
+    text-align: justify;
+    margin: 0px 15px;
+    margin-top: 0px;
+    font-weight: 600;
+}
+.sectionhero > p {
+    margin: 0px 15px;
+    text-align: start;
+}
+
+#heroimg {
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 100%;
+    align-self: center;
+    border: 3px solid #112D4E;
+}
+
+/* End hero */
 
 
 

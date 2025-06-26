@@ -4,7 +4,7 @@
     --font-color: #112D4E;
     --background-color: #F9F7F7;
     --link-color: #f1f1f1;
-    --highlight-color: #1d3652;
+    --highlight-color: #924f11;
     --gradient-transparent: linear-gradient(0deg, rgba(249, 247, 247, 0) 0%, rgba(249, 247, 247, 0.41) 5%, rgba(249, 247, 247, 0.87) 10%, rgba(249, 247, 247, 1) 52%, rgba(136, 151, 168, 1) 100%);
     --gradient-matte: linear-gradient(0deg,rgba(249, 247, 247, 1) 0%, rgba(249, 247, 247, 1) 5%, rgba(249, 247, 247, 1) 10%, rgba(249, 247, 247, 1) 52%, rgba(136, 151, 168, 1) 100%);
 }
@@ -99,6 +99,9 @@ body {
     margin: 0px 15px;
     text-align: start;
 }
+.coloredname {
+    color: var(--highlight-color);
+}
 
 #heroimg {
     margin-top: 5%;
@@ -132,6 +135,15 @@ body {
     margin: 0 15px;
     text-align: left;
     margin-top: 10px;
+}
+
+.line {
+    background: var(--font-color);
+    width: 90%;
+    height: 2px;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
 }
 /* End about me */
 

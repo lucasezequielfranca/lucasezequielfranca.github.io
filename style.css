@@ -131,10 +131,13 @@ body {
 }
 
 #aboutme {
+    translate: 0px 100%;
     align-self: center;
     margin: 0 15px;
     text-align: left;
     margin-top: 10px;
+    color: transparent;
+    transition: all 1s;
 }
 
 .line {

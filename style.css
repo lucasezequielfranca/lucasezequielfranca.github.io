@@ -72,7 +72,7 @@ body {
     
 }
 #menuColapsavel > .links {
-    color: var(--background-color);
+    color: transparent;
     padding: 5px;
     flex-basis: 50%;
     

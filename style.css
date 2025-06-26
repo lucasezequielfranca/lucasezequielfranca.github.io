@@ -108,6 +108,23 @@ body {
     border: 3px solid #112D4E;
 }
 
+.sectionhero > .accountssection {
+    display: flex;
+}
+
+.sectionhero > .accountssection > .account-links-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-content: space-evenly;
+    font-size: 32px;
+    
+}
+
+.sectionhero > .accountssection > .account-links-area > a > .accountstext {
+    display: none;
+}
 /* End hero */
 
 

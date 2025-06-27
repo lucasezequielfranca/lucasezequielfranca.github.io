@@ -79,11 +79,14 @@
 
     <!-- Java Script -->
     <script>
-        aboutme.style.translate = '0px 100%'
-        aboutme.style.transition = 'all 1s;'
-        aboutme.style.translate = '0px 0px'
-
-        aboutme.style.color = 'var(--font-color)'
+        document.addEventListener('DOMContentLoaded', function() {
+            aboutme.style.translate = '0px 100%'
+            aboutme.style.transition = 'all 1s;'
+            aboutme.style.translate = '0px 0px'
+    
+            aboutme.style.color = 'var(--font-color)'
+         // your code here
+        }, false);
         var menu = document.getElementById("menuColapsavel")
         var links = document.getElementsByClassName("links")
         menu.style.translate = ('0 -100%')

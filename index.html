@@ -39,7 +39,7 @@
     
     <!-- Sessao do sobre mim -->
     <section class="sectionhero" id="hero">
-        <h1>Olá visitante, sou <span class="coloredname">Lucas</span> 👋</h1>
+        <h1>Olá visitante, sou <span class="coloredname" id="nome">Lucas</span> 👋</h1>
         <p>Desenvolvo apps e front-ends que impressionam e engajam. Bora conversar?</p>
         <div class="line"></div>
         <img src="/imgs/Retrato.webp" alt="" srcset="" id="heroimg">
@@ -83,29 +83,21 @@
     <!-- Java Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            nome.textContent = 'entrei'
             aboutme.style.translate = '0px 100%'
-            console.log("got here")
+            nome.textContent = 'entrei 1'
             aboutme.style.transition = 'all 1s'
-            console.log("got transisition")
+            nome.textContent = 'entrei 2'
             aboutme.style.translate = '0px 0px'
-            console.log("got 0 0")
-    
+            nome.textContent = 'entrei 3'
             aboutme.style.color = 'var(--font-color)'
+            nome.textContent = 'entrei 4'
          // your code here
         }, false);
         var menu = document.getElementById("menuColapsavel")
         var links = document.getElementsByClassName("links")
         menu.style.translate = ('0 -100%')
         function colapsarMenu() {
-            console.log(menu.style.translate)
-            aboutme.style.translate = '0px 100%'
-            console.log("got here")
-            aboutme.style.transition = 'all 1s'
-            console.log("got transisition")
-            aboutme.style.translate = '0px 0px'
-            console.log("got 0 0")
-    
-            aboutme.style.color = 'var(--font-color)'
             if (menu.style.translate == '0px -100%'){
                 openMenu(menu, hamburguer)
             } else if (menu.style.translate == '0px'){

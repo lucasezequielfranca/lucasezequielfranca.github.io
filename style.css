@@ -1,156 +1,63 @@
-:root
-{
+/* Seguiremos com o padrao de codigo mobile first */
+
+/* Ajustes Gerais */
+:root {
     /* Define cores personalizadas nas variaveis abaixo */
-    --font-color: #112D4E;
-    --background-color: #F9F7F7;
-    --link-color: #f1f1f1;
-    --highlight-color: #924f11;
-    --gradient-transparent: linear-gradient(0deg, rgba(249, 247, 247, 0) 0%, rgba(249, 247, 247, 0.41) 5%, rgba(249, 247, 247, 0.87) 10%, rgba(249, 247, 247, 1) 52%, rgba(136, 151, 168, 1) 100%);
-    --gradient-matte: linear-gradient(0deg,rgba(249, 247, 247, 1) 0%, rgba(249, 247, 247, 1) 5%, rgba(249, 247, 247, 1) 10%, rgba(249, 247, 247, 1) 52%, rgba(136, 151, 168, 1) 100%);
+    --font-color: #fff8f0;
+    --background-color: #0b132b;
+    --highlight-color: #92140c;
 }
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
+    font-family: Inter, sans-serif;
     color: var(--font-color);
 }
+
 body {
     background-color: var(--background-color);
 }
 
-/* Codigo mobile first */
-
-
-/* Nav Menu */
-.navmenu {
+/* Header*/
+.header {
     display: flex;
     flex-flow: column nowrap;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0px;
     width: 100%;
-}
-
-/* firstrow */
-.navmenu > .firstrow {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    background-color: var(--background-color);
-    z-index: 1;
-    background: #F9F7F7;
-    background: linear-gradient(0deg, rgba(249, 247, 247, 0) 0%, rgba(249, 247, 247, 0.41) 5%, rgba(249, 247, 247, 0.87) 10%, rgba(249, 247, 247, 1) 52%, rgba(136, 151, 168, 1) 100%);
-}
-.navmenu > .firstrow > .name {
-    margin: 15px;
-    font-size: 28px;
-    flex-shrink: 0;
-    
-}
-
-#hamburguer {
-    margin: 15px;
+    height: 48px;
+    padding: 0px 5px;
     font-size: 32px;
-    align-content: center;
-    flex-shrink: 0;
-}
-
-/* Menu colapsavel */
-#menuColapsavel {
-    transition: background 0.2s;
-    background-color: var(--font-color);
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    transition: translate 0.2s;
-    translate: 0px;
-    background: transparent;
-    z-index: 0;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 5px 10px transparent;
     
 }
-#menuColapsavel > .links {
-    color: transparent;
-    padding: 5px;
-    flex-basis: 50%;
-    
+.blur {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 48px;
 
 }
-/* End Nav Menu */
-/* about me */
-.sectionhero {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: stretch;
-    margin-top: 100px;
-
+.cabecalho > * {
+    color: var(--font-color);
 }
 
-.sectionhero > h1 {
-    text-align: left;
-    margin: 0px 15px;
-    margin-top: 0px;
-    font-weight: 600;
-}
-.sectionhero > p {
-    margin: 0px 15px;
-    text-align: start;
-}
-.coloredname {
-    color: var(--highlight-color);
-}
-
-#heroimg {
-    margin-top: 5%;
-    width: 100%;
-    border-radius: 100%;
-    align-self: center;
-    border: 3px solid #112D4E;
-}
-
-.sectionhero > .accountssection {
-    display: flex;
-}
-
-.sectionhero > .accountssection > .account-links-area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    align-content: space-evenly;
-    font-size: 32px;
-    margin-top: 5px;
-    
-}
-
-.sectionhero > .accountssection > .account-links-area > a > .accountstext {
-    display: none;
-}
-
-#aboutme {
-    translate: 0px 100%;
-    align-self: center;
-    margin: 0 15px;
-    text-align: left;
-    margin-top: 10px;
-    color: transparent;
-    transition: all 1s;
-}
-
-.line {
-    background: var(--font-color);
-    width: 90%;
-    height: 2px;
-    justify-content: center;
-    align-content: center;
-    margin: 20px;
-}
-/* End about me */
 
 
+
+#foto-lf {
+    max-width: 100%;
+}
 
 
 

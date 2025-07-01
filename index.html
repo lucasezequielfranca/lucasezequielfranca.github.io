@@ -18,15 +18,14 @@
 <body>
     <!-- Top menu -->
     <header class="header">
-        <div class="cabecalho">
-            <!-- <div class="blur"></div> -->
+        <div id="cabecalho">
             <a href="/" class="logo">&ltLF/&gt</a>
-            <i class="fa-solid fa-bars" id="botao-menu-nav" onclick="colapsarMenu()"></i>
+            <i class="fa-solid fa-bars" id="botao-menu-nav" onclick="toggleMenu()"></i>
         </div>
         <nav id="menu-navegacao">
             <ul>
-                <li><a href="#" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Sobre mim</a></li>
-                <li><a href="#" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Formação educacional</a></li>
+                <li><a href="#foto-lf" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Sobre mim</a></li>
+                <li><a href="#" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Formação</a></li>
                 <li><a href="#" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Trabalhos</a></li>
                 <li><a href="#" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Contato</a></li>
             </ul>
@@ -35,20 +34,20 @@
     
     <!-- Sessao do sobre mim -->
     <section class="sobre-mim">
-        <h1>Olá visitante, sou <span class="nome-colorido">Lucas</span> 👋</h1>
-        <h2>Desenvolvo apps e front-ends que impressionam e engajam. Bora conversar?</h2>
+        <h1>Olá, meu nome é <span class="nome-colorido">Lucas</span>, <span>desenvolvedor Front-End</span> 👋 </h1>
+        <!-- <h2>Desenvolvo apps e front-ends que impressionam e engajam. Bora conversar?</h2> -->
         <div class="line"></div>
-        <img src="/imgs/Retrato.webp" alt="" srcset="" id="foto-lf">
-
+        <img src="/imgs/Retrato.webp" alt="Foto do desenvolvedor Lucas França" srcset="" id="foto-lf">
+        
         <!-- Sessao com icones e links para redes sociais -->
          <ul class="links-redes-sociais">
-            <li>
-                <a href="https://github.com/lucasezequielfranca/" target="_blank"><i class="fa-brands fa-github"></i><span class="nome-redes-sociais">GitHub</span></a>
+            <li class="list">
+                <a href="https://github.com/lucasezequielfranca/" target="_blank" class="alink"><i class="fa-brands fa-github"></i><span class="nome-redes-sociais">GitHub</span></a>
             </li>
-            <li>
+            <li class="list">
                 <a href="https://linkedin.com/in/lucasezequielfranca/" target="_blank"><i class="fa-brands fa-linkedin"></i><span class="nome-redes-sociais">LinkedIn</span></a>
             </li>
-            <li>
+            <li class="list">
                 <a href="http://instagram.com/lusca.franca" target="_blank"><i class="fa-brands fa-instagram"></i><span class="nome-redes-sociais">Instagram</span></a>
             </li>
          </ul>
@@ -60,7 +59,7 @@
 
     <!-- Sessao formacao academica e linguagens -->
     <section class="formacao">
-
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio provident corrupti in, praesentium vitae reiciendis sequi ad reprehenderit officiis, rerum at. Eveniet officia possimus blanditiis ipsum praesentium odit consectetur inventore.
     </section>
 
 
@@ -68,51 +67,34 @@
 
     <!-- Java Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            nome.textContent = 'entrei'
-            aboutme.style.translate = '0px 100%'
-            nome.textContent = 'entrei 1'
-            aboutme.style.transition = 'all 1s'
-            nome.textContent = 'entrei 2'
-            aboutme.style.translate = '0px 0px'
-            nome.textContent = 'entrei 3'
-            aboutme.style.color = 'var(--font-color)'
-            nome.textContent = 'entrei 4'
-         // your code here
-        }, false);
-        var menu = document.getElementById("menuColapsavel")
-        var links = document.getElementsByClassName("links")
-        menu.style.translate = ('0 -100%')
-        function colapsarMenu() {
-            if (menu.style.translate == '0px -100%'){
-                openMenu(menu, hamburguer)
-            } else if (menu.style.translate == '0px'){
-                closeMenu(menu, hamburguer)
+        var header = document.querySelector('.header')
+        var menu_navegacao = document.getElementById("menu-navegacao")
+        var cabecalho = document.getElementById("cabecalho")
+        var nav_ul = document.querySelector('#menu-navegacao > ul')
+        document.addEventListener("DOMContentLoaded", function(){
+            menu_navegacao.style.translate = '0 -100%'
+            menu_navegacao.style.display = 'none'
+        })
+
+        function toggleMenu() {
+            // checa se o menu esta escondido
+            if(menu_navegacao.style.display == 'none') {
+                abrirMenu(menu_navegacao)
+                return
             }
+            esconderMenu(menu_navegacao)
         }
-        function closeMenu(menu, icon) {
-            
+        function abrirMenu(menu) {
+            menu.style.display = 'flex'
+            menu.style.transition = 'all 1s'
+            menu.style.translate = '0px'
+        }
+        function esconderMenu(menu) {
+            menu.style.transition = 'all 1s'
             menu.style.translate = '0 -100%'
-            icon.className = 'fa-solid fa-bars'
-            menu.style.transition = '0.2s'
-            menu.style.background = 'transparent'
-            firstrow.style.background = 'var(--gradient-transparent)'
-            for (let i = 0; i < links.length; i++) {
-                links[i].style.transition = '0.2s'
-                links[i].style.color = 'transparent'
-            }
+            menu.style.display = 'none'
         }
-        function openMenu(menu, icon) {
-            menu.style.translate = ('0')
-            icon.className = 'fa-solid fa-x'
-            menu.style.background = 'var(--font-color)'
-            menu.style.transition = '0.2s'
-            firstrow.style.background = 'var(--gradient-matte)'
-            for (let i = 0; i < links.length; i++) {
-                links[i].style.transition = '0.2s'
-                links[i].style.color = 'var(--background-color)'
-            }
-        }
+
     </script>
 </body>
 </html>

@@ -182,6 +182,7 @@ body {
     box-shadow: 0px 0px 8px 1px rgba(255,248,240,0.85);
     margin-top: 15px;
     margin-bottom: 5px;
+    max-width: 70%;
 }
 /* Fim formacao */
 
@@ -302,8 +303,73 @@ body {
 }
 
 /* Codigo restante das telas */
+/* Codigo restante das telas
+*****************************
+********************************
+*******************************
+*********************************
+*********************************
+********************************** */
 @media screen and (min-width: 767px){
-    body{
-        background-color: black;
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    color: var(--font-color);
+    }
+
+    .header {
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    top: 0px;
+    width: 80%;
+    align-content: center;
+    margin-left: 10%;
+    background-color: var(--background-color);
+    }
+    .sobre-mim {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    width: 80%;
+    align-content: center;
+    margin-left: 10%;
+    background-color: var(--background-color);
+    }
+    .formacao-habilidades-section {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    width: 80%;
+    align-content: center;
+    margin-left: 10%;
+    background-color: var(--background-color);
+    }
+    .portifolio-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 80%;
+    align-content: center;
+    margin-left: 10%;
+    background-color: var(--background-color);
+    }
+    .contato-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    width: 80%;
+    align-content: center;
+    margin-left: 10%;
+    background-color: var(--background-color);
     }
 }

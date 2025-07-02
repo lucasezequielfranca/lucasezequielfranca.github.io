@@ -221,6 +221,85 @@ body {
 }
 
 
+/* Contato */
+
+.contato-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contato-section > h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form-contato {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+.form-contato > * {
+    width: 80%;
+    height: 48px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    color: var(--background-color);
+    outline: none;
+    transition: all .2s;
+    resize: vertical;   
+}
+
+.form-contato > *:hover, .form-contato > *:focus {
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 0 3px var(--highlight-color);
+
+}
+
+.form-contato > button {
+    padding: 15px;
+    background-color: var(--highlight-color);
+    color: var(--font-color);
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+/* Footer */
+.footer-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 15px;
+    height: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+    background-color: var(--less-background-color);
+}
+.footer-section > p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer-section > .links-redes-sociais {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.footer-section > .links-redes-sociais > .redes-list > a > *  {
+    border: 1px solid var(--font-color);
+    border-radius: 10px;
+    padding: 1px 4px;
+    color: var(--font-color);
+    font-size: 48px;
+}
 
 /* Codigo restante das telas */
 @media screen and (min-width: 767px){

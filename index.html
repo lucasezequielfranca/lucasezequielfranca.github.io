@@ -108,13 +108,31 @@
 
      <!-- Sessao Contato -->
       <section class="contato-section">
-        <form action="https://formsubmit.co/lucas.e.franca.contato@gmail.com" method="POST">
-            <input type="text" name="nome" required>
-            <input type="email" name="email" required>
-            <button type="submit">Send</button>
+        <h1>📧 <br>Formulario de Contato</h1>
+        <form action="https://formsubmit.co/lucas.e.franca.contato@gmail.com" method="POST" class="form-contato">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="seuemail@email.com"  required>
+            <input type="hidden" name="_next" value="https://lucasezequielfranca.github.io/obrigado.html">
+            <textarea name="message" placeholder="Escreva sobre o assunto aqui!"></textarea>
+            <button type="submit">Enviar!</button>
         </form> 
       </section>
 
+      <!-- Footer -->
+       <section class="footer-section">
+        <ul class="links-redes-sociais">
+            <li class="redes-list">
+                <a href="https://github.com/lucasezequielfranca/" target="_blank" class="alink"><i class="fa-brands fa-github"></i><span class="nome-redes-sociais">GitHub</span></a>
+            </li>
+            <li class="redes-list">
+                <a href="https://linkedin.com/in/lucasezequielfranca/" target="_blank"><i class="fa-brands fa-linkedin"></i><span class="nome-redes-sociais">LinkedIn</span></a>
+            </li>
+            <li class="redes-list">
+                <a href="http://instagram.com/lusca.franca" target="_blank"><i class="fa-brands fa-instagram"></i><span class="nome-redes-sociais">Instagram</span></a>
+            </li>
+         </ul>
+         <p>Site desenvolvido por Lucas França <br> RU: 3705137</p>
+       </section>
     
 
     <!-- Java Script -->

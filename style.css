@@ -328,7 +328,6 @@ body {
     width: 80%;
     align-content: center;
     margin-left: 10%;
-    background-color: var(--background-color);
     }
     .sobre-mim {
     display: flex;

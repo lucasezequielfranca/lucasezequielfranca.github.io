@@ -24,44 +24,96 @@
         </div>
         <nav id="menu-navegacao">
             <ul>
-                <li><a href="#foto-lf" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Sobre mim</a></li>
-                <li><a href="#" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Formação</a></li>
-                <li><a href="#" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Trabalhos</a></li>
-                <li><a href="#" class="links-navegacao" onclick="closeMenu(menu, hamburguer)">Contato</a></li>
+                <li><a href="#foto-lf" class="links-navegacao" onclick="esconderMenu(menu_navegacao, botao_nav)">Sobre mim</a></li>
+                <li><a href="#formacao" class="links-navegacao" onclick="esconderMenu(menu_navegacao, botao_nav)">Formação</a></li>
+                <li><a href="#portifolio" class="links-navegacao" onclick="esconderMenu(menu_navegacao, botao_nav)">Portifolio</a></li>
+                <li><a href="#" class="links-navegacao" onclick="esconderMenu(menu_navegacao, botao_nav)">Contato</a></li>
             </ul>
         </nav>
     </header>
     
     <!-- Sessao do sobre mim -->
     <section class="sobre-mim">
-        <h1>Olá, meu nome é <span class="nome-colorido">Lucas</span>, <span>desenvolvedor Front-End</span> 👋 </h1>
+        <h1>Olá, meu nome é <span class="nome-colorido">Lucas</span>, <span>desenvolvedor Front-End!</span></h1>
         <!-- <h2>Desenvolvo apps e front-ends que impressionam e engajam. Bora conversar?</h2> -->
         <div class="line"></div>
         <img src="/imgs/Retrato.webp" alt="Foto do desenvolvedor Lucas França" srcset="" id="foto-lf">
         
         <!-- Sessao com icones e links para redes sociais -->
          <ul class="links-redes-sociais">
-            <li class="list">
+            <li class="redes-list">
                 <a href="https://github.com/lucasezequielfranca/" target="_blank" class="alink"><i class="fa-brands fa-github"></i><span class="nome-redes-sociais">GitHub</span></a>
             </li>
-            <li class="list">
+            <li class="redes-list">
                 <a href="https://linkedin.com/in/lucasezequielfranca/" target="_blank"><i class="fa-brands fa-linkedin"></i><span class="nome-redes-sociais">LinkedIn</span></a>
             </li>
-            <li class="list">
+            <li class="redes-list">
                 <a href="http://instagram.com/lusca.franca" target="_blank"><i class="fa-brands fa-instagram"></i><span class="nome-redes-sociais">Instagram</span></a>
             </li>
          </ul>
         <p>
-            Sou um entusiasta da tecnologia, atualmente curso Análise e Desenvolvimento de Sistemas e Ciência de Dados. Minha paixão reside em dar vida a ideias através do front-end, criando experiências web incríveis, e também em construir aplicativos desktop e mobile que realmente façam a diferença no dia a dia das pessoas. Adoro desvendar o que os dados nos dizem e transformar isso em soluções práticas e intuitivas!
+            Sou um entusiasta da tecnologia com paixão reside em dar vida a ideias através do front-end, criando experiências web incríveis, e também em construir aplicativos desktop e mobile que realmente façam a diferença no dia a dia das pessoas. Adoro desvendar o que os dados nos dizem e transformar isso em soluções práticas e intuitivas!
         </p>
         <div class="line"></div>
     </section>
 
-    <!-- Sessao formacao academica e linguagens -->
-    <section class="formacao">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio provident corrupti in, praesentium vitae reiciendis sequi ad reprehenderit officiis, rerum at. Eveniet officia possimus blanditiis ipsum praesentium odit consectetur inventore.
+    <!-- Sessao formacao academica e habilidades -->
+    <section class="formacao-habilidades-section">
+        <h1>Formação academica</h1>
+        <div class="formacao-div" id="formacao">
+            <p class="formacao">Atualmente curso graducação de Análise e Desenvolvimento de Sistemas, na faculdade Uninter com previsão de formação em 2027. Também curso Ciência de Dados na faculdade Univesp, com previsão de formação em 2029.</p>
+        </div>
+        <div class="line"></div>
+        <h2>Habilidades</h2>
+        <div class="habilidades-div">
+            <p class="habilidades">Tenho inglês avançado com escrita, leitura e escuta, e ingles intermediario para fala e pronuncia. Tabem sou fluente em Português, minha lingua materna.</p>
+            <p class="habilidades">Auto-didatismo é uma forte aptidão minha, curiosidade para aprender e sede de resolver problemas.</p>
+            <p class="habilidades">Trabalho em equipe é uma habilidade nativa, colaborar e compartilha ideias me ajuda a impulsionar os projetos.</p>
+        </div>
+        <div class="line"></div>
     </section>
 
+    <!-- Sessao do portifolio -->
+     <section class="portifolio-section" id="portifolio">
+        <h1>Portifolio</h1>
+        <p class="aviso">Clique em um projeto para saber mais!</p>
+        <div class="projetos-poll">
+             <!-- projeto inicio -->
+            <article class="projeto">
+                <a href="https://github.com/lucasezequielfranca/Controle-Gastos" class="projeto-link">
+                    <img src="imgs/Contas projeto img.png" alt="" srcset="" class="projeto-img">
+                    <p class="projeto-nome">Aplicativo para controle de gastos pessoais.</p>
+                </a>
+            </article>
+            <!-- projeto fim -->
+              <!-- projeto inicio -->
+            <article class="projeto">
+                <a href="#" target="_blank" class="projeto-link">
+                    <img src="imgs/Projeto em Desenvolvimento.jpg" alt="" srcset="" class="projeto-img">
+                    <p class="projeto-nome">Aplicativo de gestão empresas MEI.</p>
+                </a>
+            </article>
+            <!-- projeto fim -->
+             <!-- projeto inicio -->
+            <article class="projeto">
+                <a href="#" class="projeto-link">
+                    <img src="imgs/Projeto em Desenvolvimento.jpg" alt="" srcset="" class="projeto-img">
+                    <p class="projeto-nome">Aplicativo mobile listas de tarefa gameficado.</p>
+                </a>
+            </article>
+            <!-- projeto fim -->
+            <div class="line"></div>
+        </div>
+     </section>
+
+     <!-- Sessao Contato -->
+      <section class="contato-section">
+        <form action="https://formsubmit.co/lucas.e.franca.contato@gmail.com" method="POST">
+            <input type="text" name="nome" required>
+            <input type="email" name="email" required>
+            <button type="submit">Send</button>
+        </form> 
+      </section>
 
     
 
@@ -71,6 +123,7 @@
         var menu_navegacao = document.getElementById("menu-navegacao")
         var cabecalho = document.getElementById("cabecalho")
         var nav_ul = document.querySelector('#menu-navegacao > ul')
+        var botao_nav = document.querySelector('#botao-menu-nav')
         document.addEventListener("DOMContentLoaded", function(){
             menu_navegacao.style.translate = '0 -100%'
             menu_navegacao.style.display = 'none'
@@ -79,20 +132,20 @@
         function toggleMenu() {
             // checa se o menu esta escondido
             if(menu_navegacao.style.display == 'none') {
-                abrirMenu(menu_navegacao)
+                abrirMenu(menu_navegacao, botao_nav)
                 return
             }
-            esconderMenu(menu_navegacao)
+            esconderMenu(menu_navegacao, botao_nav)
         }
-        function abrirMenu(menu) {
+        function abrirMenu(menu, botao) {
             menu.style.display = 'flex'
-            menu.style.transition = 'all 1s'
             menu.style.translate = '0px'
+            botao.className = "fa-solid fa-x"
         }
-        function esconderMenu(menu) {
-            menu.style.transition = 'all 1s'
+        function esconderMenu(menu, botao) {
             menu.style.translate = '0 -100%'
             menu.style.display = 'none'
+            botao.className = "fa-solid fa-bars"
         }
 
     </script>
